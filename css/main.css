@@ -407,6 +407,14 @@ template {
 /* Estilos de todas las paginas */
 /* ============================================= */
 
+.navbar{
+  padding: 0px;
+}
+
+.navbar-brand{
+  padding: 0px;
+}
+
 .efecto-crecimiento {
   display: inline-block;
   transition-property: all;
@@ -422,6 +430,7 @@ template {
 
 .portada-titulo {
   animation-name: entrada-copada;
+  padding: 10px;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 1.5s;
@@ -494,20 +503,21 @@ main {
 .titulo-secundario {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  font-size: 1.5rem !important;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
 
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
+.titulo-terciario {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1.2rem !important;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .presentacion {
   text-align: center;
-}
-
-.presentacion p {
-  margin: 0px 10px;
 }
 
 #reserva {
@@ -529,24 +539,6 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .nav-lista-link {
-    font-size: 1rem;
-  }
-
-  .presentacion {
-    width: 50%;
-  }
-
-  #reserva {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-
-  .contenedor {
-    flex-direction: row;
-    /* margin: 80px 0px; */
   }
 
   #portada, .portada {
@@ -576,7 +568,6 @@ main {
 /* Estilos de la pagina ubicacion */
 /* ========================================== */
 .ubicacion-contenedor {
-  /* padding: 30px 0; */
   text-align: center;
   border: solid 3px #c4d854;
   width: auto;
@@ -641,4 +632,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.link-mio {
+  color: #c4d854;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
 }
