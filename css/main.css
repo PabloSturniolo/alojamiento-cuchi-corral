@@ -393,10 +393,12 @@ template {
   top: 0;
   text-align: center;
   width: 100%;
+  background-color: #15561d !important;
+  padding: 0px;
 }
 
 .nav-link {
-  /* color: #c4d854; */
+  color: #c4d854 !important;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -406,6 +408,13 @@ template {
 
 /* Estilos de todas las paginas */
 /* ============================================= */
+body {
+  background-color: #e8e8e8;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
 
 .efecto-crecimiento {
   display: inline-block;
@@ -422,6 +431,7 @@ template {
 
 .portada-titulo {
   animation-name: entrada-copada;
+  padding: 10px;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 1.5s;
@@ -451,6 +461,7 @@ template {
   75% {
     transform: scale3d(1.05, .95, 1);
   }
+
   100% {
     transform: scaleX(1);
   }
@@ -488,26 +499,27 @@ html {
 
 main {
   font-family: 'Roboto', sans-serif;
-  min-height: 40%;
+  min-height: 40vh;
 }
 
 .titulo-secundario {
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  font-size: 1.5rem !important;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
 }
 
-.contenedor {
-  display: flex;
-  flex-direction: column;
-  /* flex-wrap: wrap; */
+.titulo-terciario {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1.2rem !important;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .presentacion {
   text-align: center;
-}
-
-.presentacion p {
-  margin: 0px 10px;
 }
 
 #reserva {
@@ -531,25 +543,8 @@ main {
     align-items: center;
   }
 
-  .nav-lista-link {
-    font-size: 1rem;
-  }
-
-  .presentacion {
-    width: 50%;
-  }
-
-  #reserva {
-    width: 50%;
-    margin-bottom: 20px;
-  }
-
-  .contenedor {
-    flex-direction: row;
-    /* margin: 80px 0px; */
-  }
-
-  #portada, .portada {
+  #portada,
+  .portada {
     background-size: auto;
   }
 }
@@ -560,15 +555,17 @@ main {
   font-weight: 400;
   font-size: 1rem;
   border: solid 3px #c4d854;
-  width: auto;
-  height: auto;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
   .contacto-contenedor {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
 }
@@ -576,7 +573,6 @@ main {
 /* Estilos de la pagina ubicacion */
 /* ========================================== */
 .ubicacion-contenedor {
-  /* padding: 30px 0; */
   text-align: center;
   border: solid 3px #c4d854;
   width: auto;
@@ -618,7 +614,7 @@ main {
   /* text-align: center; */
   border: solid 3px #c4d854;
   display: flex;
-  height: 35vh;
+  height: 40vh;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -641,4 +637,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.link-mio {
+  color: #c4d854;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
 }
