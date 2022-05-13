@@ -1,0 +1,23 @@
+/* Estilos de la pagina disponibilidad */
+/* ========================================== */
+
+.disponibilidad-contenedor {
+    color: #000000;
+    font-weight: 800;
+    font-size: 1.4rem;
+    /* text-align: center; */
+    border: $border $color-letras;
+    display: flex;
+    height: 40vh;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh;
+
+    div {
+        display: flex;
+        label {
+            width: 50px;
+        }
+    }
+}
