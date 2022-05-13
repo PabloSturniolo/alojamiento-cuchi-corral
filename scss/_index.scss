@@ -1,0 +1,80 @@
+/* Estilos de la pagina index */
+/* ============================================= */
+
+body,
+html {
+    height: 100%;
+}
+
+#portada,
+.portada {
+    background-size: cover;
+    background-image: url(../images/portada.jpg);
+    min-height: 50%;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portada-titulo {
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 500;
+    color: $color-letras;
+    font-size: 2rem;
+    background-color: #222323;
+    opacity: 100%;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    min-height: 40vh;
+}
+
+.titulo-secundario {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.5rem !important;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+
+.titulo-terciario {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.2rem !important;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.presentacion {
+    text-align: center;
+}
+
+#reserva {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reserva-form-campo {
+    display: flex;
+    justify-content: center;
+
+    label {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #portada,
+    .portada {
+        background-size: auto;
+    }
+}

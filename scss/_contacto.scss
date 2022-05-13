@@ -1,0 +1,19 @@
+/* Estilos de la pagina contacto */
+/* ========================================== */
+.contacto-contenedor {
+    font-weight: 400;
+    font-size: 1rem;
+    border: $border $color-letras;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+    .contacto-contenedor {
+        align-items: center;
+        justify-content: center;
+    }
+}

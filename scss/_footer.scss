@@ -1,0 +1,16 @@
+/* Estilos del footer */
+/* ========================================== */
+footer {
+    background-color: black;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link-mio {
+    color: $color-letras;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+}

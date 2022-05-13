@@ -1,0 +1,90 @@
+@import "reset";
+@import "variables";
+@import "index";
+@import "contacto";
+@import "ubicacion";
+@import "imagenes";
+@import "disponibilidad";
+@import "footer";
+
+/* Estilos del navegador */
+/* ========================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    background-color: $color-fondo-navbar !important;
+    padding: 0px;
+}
+
+.nav-link {
+    color: $color-letras !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-logo {
+    width: 215px;
+}
+
+/* Estilos de todas las paginas */
+/* ============================================= */
+body {
+    background-color: $color-fondo-pagina;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.efecto-crecimiento {
+    display: inline-block;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-delay: .1s;
+    transition-timing-function: ease;
+
+    &:hover {
+        transform: scaleY(1.5);
+        background-color: $color-fondo-crecimiento;
+    }
+}
+
+.portada-titulo {
+    animation-name: entrada-copada;
+    padding: 10px;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+
+@keyframes entrada-copada {
+    0% {
+        transform: scaleX(1);
+    }
+
+    30% {
+        transform: scale3d(1.25, .75, 1);
+    }
+
+    40% {
+        transform: scale3d(.75, 1.25, 1);
+    }
+
+    50% {
+        transform: scale3d(1.15, .85, 1);
+    }
+
+    65% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    75% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+}
