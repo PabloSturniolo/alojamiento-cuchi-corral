@@ -332,17 +332,17 @@ main {
   font-family: 'Roboto', sans-serif;
   min-height: 40vh; }
 
-.titulo-secundario {
+.titulo, .titulo-secundario, .titulo-terciario {
   font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 1.5rem !important;
+  text-align: center; }
+
+.titulo-secundario {
+  font-size: 1.5 !important;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em; }
 
 .titulo-terciario {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 1.2rem !important;
+  font-size: 1.2 !important;
   margin-block-start: 1em;
   margin-block-end: 1em; }
 

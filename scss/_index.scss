@@ -32,21 +32,38 @@ main {
     min-height: 40vh;
 }
 
-.titulo-secundario {
+
+.titulo {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    font-size: 1.5rem !important;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
 }
 
-.titulo-terciario {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 1.2rem !important;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
+@mixin font($font) {
+    font-size: $font !important;
 }
+
+// Mapa
+$titulo-name:(
+    secundario: 0.83em,
+    terciario: 1em
+);
+
+// each para el mapa, extend, include mixin e if
+@each $name, $size in $titulo-name{
+    .titulo-#{$name}{
+        @extend .titulo;
+        @if ($name == secundario)
+        {
+            @include font(1.5)
+        }
+        @if ($name == terciario)
+        {
+            @include font(1.2)
+        }
+        margin-block-start: $size;
+        margin-block-end: $size;
+    }
+};
 
 .presentacion {
     text-align: center;
