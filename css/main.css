@@ -305,33 +305,6 @@ template {
 
 /* Estilos de la pagina index */
 /* ============================================= */
-body,
-html {
-  height: 100%; }
-
-#portada,
-.portada {
-  background-size: cover;
-  background-image: url(../images/portada.jpg);
-  min-height: 50%;
-  background-position: center;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.portada-titulo {
-  font-family: 'Shadows Into Light', cursive;
-  font-weight: 500;
-  color: #bbf206;
-  font-size: 2rem;
-  background-color: #222323;
-  opacity: 100%; }
-
-main {
-  font-family: 'Roboto', sans-serif;
-  min-height: 40vh; }
-
 .titulo, .titulo-secundario, .titulo-terciario {
   font-family: 'Roboto', sans-serif;
   text-align: center; }
@@ -400,12 +373,12 @@ main {
 /* ========================================== */
 .tabla {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 10px;
   text-decoration: none;
   list-style-type: none;
-  padding: 0px; }
+  padding: 0px;
+  margin-top: 10px; }
 
 .imagenes {
   width: 100%;
@@ -415,7 +388,6 @@ main {
 /* Estilos de la pagina disponibilidad */
 /* ========================================== */
 .disponibilidad-contenedor {
-  color: #000000;
   font-weight: 800;
   font-size: 1.4rem;
   /* text-align: center; */
@@ -461,12 +433,22 @@ footer {
   font-family: 'Roboto', sans-serif; }
 
 .nav-logo {
-  width: 215px; }
+  width: 215px;
+  opacity: 90%; }
 
 /* Estilos de todas las paginas */
 /* ============================================= */
+body,
+html {
+  height: 100%;
+  color: #bbf206; }
+
 body {
-  background-color: #e8e8e8; }
+  background-image: url(../images/fondo.svg); }
+
+main {
+  font-family: 'Roboto', sans-serif;
+  min-height: 40vh; }
 
 .navbar-brand {
   padding: 0px; }
@@ -481,12 +463,29 @@ body {
     transform: scaleY(1.5);
     background-color: #000000; }
 
+#portada,
+.portada {
+  background-size: cover;
+  background-image: url(../images/portada.jpg);
+  min-height: 50%;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .portada-titulo {
   animation-name: entrada-copada;
   padding: 10px;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-  animation-duration: 1.5s; }
+  animation-duration: 1.5s;
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 500;
+  color: #bbf206;
+  font-size: 2rem;
+  background-image: url(../images/fondo.svg);
+  opacity: 100%; }
 
 @keyframes entrada-copada {
   0% {
