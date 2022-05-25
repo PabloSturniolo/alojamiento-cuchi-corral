@@ -26,12 +26,25 @@
 
 .nav-logo {
     width: 215px;
+    opacity: 90%;
 }
 
 /* Estilos de todas las paginas */
 /* ============================================= */
+
+body,
+html {
+    height: 100%;
+    color: $color-letras;
+}
+
 body {
-    background-color: $color-fondo-pagina;
+    background-image: url(../images/fondo.svg);
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    min-height: 40vh;
 }
 
 .navbar-brand {
@@ -51,12 +64,30 @@ body {
     }
 }
 
+#portada,
+.portada {
+    background-size: cover;
+    background-image: url(../images/portada.jpg);
+    min-height: 50%;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .portada-titulo {
     animation-name: entrada-copada;
     padding: 10px;
     animation-iteration-count: 1;
     animation-timing-function: ease;
     animation-duration: 1.5s;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: 500;
+    color: $color-letras;
+    font-size: 2rem;
+    background-image: url(../images/fondo.svg);
+    opacity: 100%;
 }
 
 @keyframes entrada-copada {
