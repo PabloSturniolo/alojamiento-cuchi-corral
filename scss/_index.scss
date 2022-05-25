@@ -1,38 +1,6 @@
 /* Estilos de la pagina index */
 /* ============================================= */
 
-body,
-html {
-    height: 100%;
-}
-
-#portada,
-.portada {
-    background-size: cover;
-    background-image: url(../images/portada.jpg);
-    min-height: 50%;
-    background-position: center;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portada-titulo {
-    font-family: 'Shadows Into Light', cursive;
-    font-weight: 500;
-    color: $color-letras;
-    font-size: 2rem;
-    background-color: #222323;
-    opacity: 100%;
-}
-
-main {
-    font-family: 'Roboto', sans-serif;
-    min-height: 40vh;
-}
-
-
 .titulo {
     font-family: 'Roboto', sans-serif;
     text-align: center;
