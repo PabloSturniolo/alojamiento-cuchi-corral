@@ -444,6 +444,7 @@ html {
   color: #bbf206; }
 
 body {
+  background-size: cover;
   background-image: url(../images/fondo.svg); }
 
 main {
